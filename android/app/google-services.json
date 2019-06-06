@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1029057557355",
+    "firebase_url": "https://spacex-launches-42600.firebaseio.com",
+    "project_id": "spacex-launches-42600",
+    "storage_bucket": "spacex-launches-42600.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029057557355:android:e57df7f9a27b0a71",
+        "android_client_info": {
+          "package_name": "com.necatisozer.spacexlaunches"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029057557355-ddor5nhdn4dn3jrmpfo03go26ml0nq03.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.necatisozer.spacexlaunches",
+            "certificate_hash": "3b4cee067736737a1b9cb4bef311698c5cd3572e"
+          }
+        },
+        {
+          "client_id": "1029057557355-urr6v46vf0g0kadsdnse3laa03vul29m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3fUPSOz87vAC6R4-n9UXXPlavKBZbzEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029057557355-urr6v46vf0g0kadsdnse3laa03vul29m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
