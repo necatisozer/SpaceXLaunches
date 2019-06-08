@@ -75,13 +75,12 @@ export default class List extends React.Component {
           showsVerticalScrollIndicator={false}
         >
           <View>
-            {this.state.dataSource.map(function(obj, i) {
+            {this.state.dataSource.map(function(item, i) {
               return (
                 <TouchableOpacity
                   onPress={() =>
                     this.props.navigation.navigate("Detail", {
-                      flight_number: obj.flight_number,
-                      mission_name: obj.mission_name
+                      item: item
                     })
                   }
                   key={i}
@@ -98,10 +97,10 @@ export default class List extends React.Component {
                           numberOfLines={3}
                           style={{ fontSize: 17, fontWeight: "bold" }}
                         >
-                          {obj.mission_name}
+                          {item.mission_name}
                         </Text>
                         <View style={styles.row}>
-                          <Text>{obj.launch_date_utc}</Text>
+                          <Text>{item.launch_date_utc}</Text>
                         </View>
                       </View>
                     </View>
