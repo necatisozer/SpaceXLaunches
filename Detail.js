@@ -1,5 +1,6 @@
 import React from "react";
 import { View, Text, StyleSheet, ScrollView, Image } from "react-native";
+import Moment from 'moment';
 
 export default class Detail extends React.Component {
   static navigationOptions = ({ navigation }) => {
@@ -20,7 +21,7 @@ export default class Detail extends React.Component {
               source={require("./assets/rocket.png")}
             />
             <Text style={{ fontSize: 16, margin: 5, fontWeight: "bold" }}>
-              {item.launch_date_utc}
+              {Moment(item.launch_date_local).format('MMMM Do YYYY, h:mm:ss a')}
             </Text>
           </View>
           <View style={{ margin: 10, marginBottom: 0 }}>
@@ -42,7 +43,7 @@ export default class Detail extends React.Component {
           </View>
           <View style={{ flexDirection: "row", margin: 10 }}>
             <Text style={{ flex: 0.5, fontWeight: "bold" }}>Static fire</Text>
-            <Text style={{ flex: 0.5 }}>{item.static_fire_date_utc}</Text>
+            <Text style={{ flex: 0.5 }}>{Moment(item.static_fire_date_utc).format('MMMM Do YYYY, h:mm:ss a')}</Text>
           </View>
           <View style={{ flexDirection: "row", margin: 10 }}>
             <Text style={{ flex: 0.5, fontWeight: "bold" }}>Launch window</Text>

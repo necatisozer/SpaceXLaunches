@@ -11,6 +11,7 @@ import {
   Button
 } from "react-native";
 import firebase from "react-native-firebase";
+import Moment from 'moment';
 
 export default class List extends React.Component {
   constructor(props) {
@@ -100,7 +101,7 @@ export default class List extends React.Component {
                           {item.mission_name}
                         </Text>
                         <View style={styles.row}>
-                          <Text>{item.launch_date_utc}</Text>
+                          <Text>{Moment(item.launch_date_local).format('MMMM Do YYYY, h:mm:ss a')}</Text>
                         </View>
                       </View>
                     </View>
