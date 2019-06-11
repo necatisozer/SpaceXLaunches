@@ -17,7 +17,7 @@ export default class Login extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Login</Text>
+        <Text style={{ fontSize: 17, fontWeight: "bold" }}>Login</Text>
         {this.state.errorMessage && (
           <Text style={{ color: "red" }}>{this.state.errorMessage}</Text>
         )}
@@ -36,11 +36,16 @@ export default class Login extends React.Component {
           onChangeText={password => this.setState({ password })}
           value={this.state.password}
         />
-        <Button title="Login" onPress={this.handleLogin} />
-        <Button
-          title="Don't have an account? Sign Up"
-          onPress={() => this.props.navigation.navigate("SignUp")}
-        />
+        <View style={{ marginTop: 8 }}>
+          <Button title="Login" onPress={this.handleLogin} />
+        </View>
+
+        <View style={{ marginTop: 8 }}>
+          <Button
+            title="Don't have an account? Sign Up"
+            onPress={() => this.props.navigation.navigate("SignUp")}
+          />
+        </View>
       </View>
     );
   }
